@@ -1,0 +1,5 @@
+#!/bin/bash
+g++ callgraph.c -o callgraph
+./callgraph $1 > temp.txt
+
+

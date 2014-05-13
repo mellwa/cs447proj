@@ -23,11 +23,23 @@ void CGNode::setChild(CGNode *node){
     }
 }
 
+bool CGNode::hasChildren(){
+    if(!this->children.empty()){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
 void CGNode::setFriend(CGNode *node){
     if(this->friends_pair.find(node) == this->friends_pair.end()){
-        //cout<<"set friend: "<<node->getname()<<" to "<<this->getname()<<endl;
         this->friends_pair[node] = this->friends.size();
         this->friends.push_back(node);
+        if(node->hasChildren()){
+            for(int i = 0; i < node->children.size();i++){
+                this->setFriend(node->children[i]);
+            }
+        }
     }
 }
 

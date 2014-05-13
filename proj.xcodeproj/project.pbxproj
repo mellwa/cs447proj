@@ -9,7 +9,18 @@
 /* Begin PBXBuildFile section */
 		448C015818E5FB0800E56E1C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448C015718E5FB0800E56E1C /* main.cpp */; };
 		448C015A18E5FB0800E56E1C /* proj.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 448C015918E5FB0800E56E1C /* proj.1 */; };
+		448C016218E6055000E56E1C /* CGNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448C016118E6055000E56E1C /* CGNode.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		443F128018EAAEBA004BA720 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 443F127C18EAAEB8004BA720 /* inter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 443F127018EAAEB8004BA720;
+			remoteInfo = inter;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		448C015218E5FB0800E56E1C /* CopyFiles */ = {
@@ -25,9 +36,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		443F127C18EAAEB8004BA720 /* inter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = inter.xcodeproj; path = inter/inter.xcodeproj; sourceTree = "<group>"; };
 		448C015418E5FB0800E56E1C /* proj */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = proj; sourceTree = BUILT_PRODUCTS_DIR; };
 		448C015718E5FB0800E56E1C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		448C015918E5FB0800E56E1C /* proj.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = proj.1; sourceTree = "<group>"; };
+		448C016018E600F900E56E1C /* CGNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGNode.h; sourceTree = "<group>"; };
+		448C016118E6055000E56E1C /* CGNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGNode.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,9 +55,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		443F127D18EAAEB8004BA720 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				443F128118EAAEBA004BA720 /* inter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		448C014B18E5FB0700E56E1C = {
 			isa = PBXGroup;
 			children = (
+				443F127C18EAAEB8004BA720 /* inter.xcodeproj */,
 				448C015618E5FB0800E56E1C /* proj */,
 				448C015518E5FB0800E56E1C /* Products */,
 			);
@@ -62,6 +85,8 @@
 			children = (
 				448C015718E5FB0800E56E1C /* main.cpp */,
 				448C015918E5FB0800E56E1C /* proj.1 */,
+				448C016018E600F900E56E1C /* CGNode.h */,
+				448C016118E6055000E56E1C /* CGNode.cpp */,
 			);
 			path = proj;
 			sourceTree = "<group>";
@@ -105,6 +130,12 @@
 			mainGroup = 448C014B18E5FB0700E56E1C;
 			productRefGroup = 448C015518E5FB0800E56E1C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 443F127D18EAAEB8004BA720 /* Products */;
+					ProjectRef = 443F127C18EAAEB8004BA720 /* inter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				448C015318E5FB0800E56E1C /* proj */,
@@ -112,12 +143,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		443F128118EAAEBA004BA720 /* inter */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = inter;
+			remoteRef = 443F128018EAAEBA004BA720 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXSourcesBuildPhase section */
 		448C015018E5FB0800E56E1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				448C015818E5FB0800E56E1C /* main.cpp in Sources */,
+				448C016218E6055000E56E1C /* CGNode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +269,7 @@
 				448C015F18E5FB0800E56E1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

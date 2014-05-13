@@ -26,6 +26,7 @@ public:
     void setChild(CGNode *child);
     void setFriend(CGNode *node);
     void setParent(CGNode *parent);
+    bool hasChildren();
     int T_Support();
     void T_Support_Increment();
     std::string getname();

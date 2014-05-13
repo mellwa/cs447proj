@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		443F127418EAAEB8004BA720 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 443F127318EAAEB8004BA720 /* main.cpp */; };
 		443F127618EAAEB8004BA720 /* inter.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 443F127518EAAEB8004BA720 /* inter.1 */; };
+		443F128418EAAF1F004BA720 /* CGNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 443F128218EAAF1F004BA720 /* CGNode.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		443F127018EAAEB8004BA720 /* inter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = inter; sourceTree = BUILT_PRODUCTS_DIR; };
 		443F127318EAAEB8004BA720 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		443F127518EAAEB8004BA720 /* inter.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = inter.1; sourceTree = "<group>"; };
+		443F128218EAAF1F004BA720 /* CGNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGNode.cpp; sourceTree = "<group>"; };
+		443F128318EAAF1F004BA720 /* CGNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGNode.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 		443F127218EAAEB8004BA720 /* inter */ = {
 			isa = PBXGroup;
 			children = (
+				443F128218EAAF1F004BA720 /* CGNode.cpp */,
+				443F128318EAAF1F004BA720 /* CGNode.h */,
 				443F127318EAAEB8004BA720 /* main.cpp */,
 				443F127518EAAEB8004BA720 /* inter.1 */,
 			);
@@ -118,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				443F127418EAAEB8004BA720 /* main.cpp in Sources */,
+				443F128418EAAF1F004BA720 /* CGNode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

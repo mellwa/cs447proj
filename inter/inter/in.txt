@@ -1,0 +1,68 @@
+This is child, just before spawning opt with main.bc.
+Call graph node <<null function>><<0x1c86b370>>  #uses=0
+  CS<0x0> calls function 'main'
+  CS<0x0> calls function 'scope1'
+  CS<0x0> calls function 'scope2'
+  CS<0x0> calls function 'scope3'
+  CS<0x0> calls function 'scope4'
+  CS<0x0> calls function 'scope5'
+  CS<0x0> calls function 'scope6'
+  CS<0x0> calls function 'A'
+  CS<0x0> calls function 'printf'
+  CS<0x0> calls function 'B'
+  CS<0x0> calls function 'C'
+  CS<0x0> calls function 'D'
+
+Call graph node for function: 'main'<<0x1c86c4b0>>  #uses=1
+  CS<0x1c86f3a8> calls function 'scope1'
+  CS<0x1c870908> calls function 'scope2'
+  CS<0x1c86f838> calls function 'scope3'
+  CS<0x1c86f8b8> calls function 'scope4'
+  CS<0x1c86f938> calls function 'scope5'
+  CS<0x1c86f9b8> calls function 'scope6'
+
+Call graph node for function: 'scope1'<<0x1c86b440>>  #uses=3
+  CS<0x1c87aad8> calls function 'A'
+  CS<0x1c87ab58> calls function 'B'
+  CS<0x1c87abd8> calls function 'C'
+  CS<0x1c87ac58> calls function 'D'
+
+Call graph node for function: 'scope2'<<0x1c86b4e0>>  #uses=2
+  CS<0x1c87ad98> calls function 'A'
+  CS<0x1c87ae18> calls function 'C'
+  CS<0x1c87ae98> calls function 'D'
+
+Call graph node for function: 'scope3'<<0x1c86b470>>  #uses=2
+  CS<0x1c87afd8> calls function 'A'
+  CS<0x1c87b058> calls function 'B'
+  CS<0x1c87b058> calls function 'B'
+
+Call graph node for function: 'scope4'<<0x1c87e910>>  #uses=2
+  CS<0x1c87b198> calls function 'B'
+  CS<0x1c87b218> calls function 'D'
+  CS<0x1c87b298> calls function 'scope1'
+
+Call graph node for function: 'scope5'<<0x1c87e980>>  #uses=2
+  CS<0x1c87b3d8> calls function 'B'
+  CS<0x1c87b458> calls function 'D'
+  CS<0x1c87b4d8> calls function 'A'
+
+Call graph node for function: 'scope6'<<0x1c86b5e0>>  #uses=2
+  CS<0x1c87b618> calls function 'B'
+  CS<0x1c87b698> calls function 'D'
+
+Call graph node for function: 'A'<<0x1c86c960>>  #uses=5
+  CS<0x1c87b970> calls function 'printf'
+
+Call graph node for function: 'printf'<<0x1c87edc0>>  #uses=5
+  CS<0x0> calls external node
+
+Call graph node for function: 'B'<<0x1c87eb70>>  #uses=6
+  CS<0x1c87bc30> calls function 'printf'
+
+Call graph node for function: 'C'<<0x1c87eb00>>  #uses=3
+  CS<0x1c87bef0> calls function 'printf'
+
+Call graph node for function: 'D'<<0x1c87ed00>>  #uses=6
+  CS<0x1c87c1b0> calls function 'printf'
+
